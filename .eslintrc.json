@@ -1,0 +1,42 @@
+{
+  "plugins": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-typescript",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "no-var": "error",
+    "semi": [2, "always"],
+    "quotes": [2, "double"],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "trailingComma": "es5"
+      }
+    ],
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": "error",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "react/display-name": "off",
+    "react/jsx-filename-extension": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "off",
+    "react-refresh/only-export-components": "off",
+    "@typescript-eslint/consistent-type-imports": "error"
+  }
+}
